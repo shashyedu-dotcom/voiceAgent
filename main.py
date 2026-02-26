@@ -39,15 +39,6 @@ async def speak(text):
     playsound("output.mp3")
 
     os.remove("output.mp3")
-# async def speak(text):
-#     async with client.audio.speech.with_streaming_response.create(
-#         model="gpt-4o-mini-tts",
-#         voice="alloy",
-#         input=text,
-#         response_format="pcm",
-#     ) as response:
-#         player = LocalAudioPlayer()
-#         await player.play(input=response)
         
 
 async def main():
